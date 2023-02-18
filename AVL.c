@@ -130,6 +130,7 @@ AVL* deleteAvl(AVL* root,int* key){
             if(temp == NULL){
                 temp = root;
                 root = NULL;
+                free(temp);
             }
             else{
                 *root = *temp;
